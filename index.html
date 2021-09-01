@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./src/style/select2.min.css" />
+    <link rel="stylesheet" href="./src/style/nanogallery2.min.css" />
+    <link rel="stylesheet" href="./src/style/nanogallery2.woff.min.css" />
+    <link rel="stylesheet" href="./src/style/flipping_gallery.css" />
+    <script src="./src/jquery/jquery-3.6.0.min.js"></script>
+    <script src="./src/jquery/select2.min.js"></script>
+    <script src="./src/jquery/jquery.nanogallery2.min.js"></script>
+    <script src="./src/jquery/jquery.flipping_gallery.min.js"></script>
+    <title>Info Pesantden Indonesia</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      #home,
+      #galeri {
+        min-height: 100vh;
+      }
+      body::-webkit-scrollbar {
+        width: 5px;
+      }
+
+      body::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+
+      body::-webkit-scrollbar-thumb {
+        background-color: darkgrey;
+        outline: 1px solid slategrey;
+      }
+      .nav-link:hover {
+        background-color: bisque;
+        color: black !important;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <app-bar></app-bar>
+    </header>
+    <section id="home">
+      <option-sort class="container mt-5"></option-sort>
+      <table-pesantren class="container d-block mt-5"> </table-pesantren>
+    </section>
+    <section id="galeri">
+      <div class="container-fluid bg-primary text-light text-center p-2 mb-2">
+        <h3>GALERI</h3>
+      </div>
+      <!-- Shuffle thumbnails -->
+      <h5 class="m-5">Galeri image using nanogallery2</h5>
+      <div id="nanogallery2" class="p-5">
+        <!-- IMAGES -->
+        <a href="berlin1.jpg" data-ngthumb="berlin1.jpg">Berlin 1</a>
+        <a href="berlin2.jpg" data-ngthumb="berlin2.jpg">Berlin 2</a>
+        <a href="berlin3.jpg" data-ngthumb="berlin3.jpg">Berlin 3</a>
+        <a href="berlin1.jpg" data-ngthumb="berlin1.jpg">Berlin 1</a>
+        <a href="berlin2.jpg" data-ngthumb="berlin2.jpg">Berlin 2</a>
+        <a href="berlin3.jpg" data-ngthumb="berlin3.jpg">Berlin 3</a>
+        <a href="berlin1.jpg" data-ngthumb="berlin1.jpg">Berlin 1</a>
+        <a href="berlin2.jpg" data-ngthumb="berlin2.jpg">Berlin 2</a>
+        <a href="berlin3.jpg" data-ngthumb="berlin3.jpg">Berlin 3</a>
+        <a href="berlin1.jpg" data-ngthumb="berlin1.jpg">Berlin 1</a>
+        <a href="berlin2.jpg" data-ngthumb="berlin2.jpg">Berlin 2</a>
+        <a href="berlin3.jpg" data-ngthumb="berlin3.jpg">Berlin 3</a>
+        <a href="berlin1.jpg" data-ngthumb="berlin1.jpg">Berlin 1</a>
+        <a href="berlin2.jpg" data-ngthumb="berlin2.jpg">Berlin 2</a>
+        <a href="berlin3.jpg" data-ngthumb="berlin3.jpg">Berlin 3</a>
+        
+      </div>
+      <div class="gallery container m-5">
+        <h5 class="mb-5">Stack image using flipping_gallery</h5>
+        <a href="#"><img src="berlin2.jpg" /></a>
+        <a href="#"><img src="berlin3.jpg" /></a>
+        <a href="#"><img src="berlin4.jpg" /></a>
+      </div>
+    </section>
+
+    <script src="./src/app.js" type="module"></script>
+    <script src="src/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
