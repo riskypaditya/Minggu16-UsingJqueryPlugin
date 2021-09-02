@@ -32,6 +32,7 @@ class OptionSort extends HTMLElement {
   }
   render() {
     this.innerHTML = `
+      <h5 class="container">Created by : Risky Putra Aditya with bootstrap 5</h5>
       <div class="row justify-content-center mb-5 m-0">
         <div class="col-md-4 col-6">
             <div class="input-group">
